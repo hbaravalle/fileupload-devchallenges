@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+    font-family: Poppins Medium;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeaea;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    color: #BDBDBD;
+    font-size: 12px;
+    background: #FAFAFB;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        width: 100%;
+        font-size: 18px;
+        color: #4F4F4F;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+
+    &--dad {
+
+        h2 { text-align: center }
+    
+        small {
+            font-size: 11px;
+            color: #828282;
+        }
+        
+        .dad {
+            width: 100%;
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 36px;
+            text-align: center;
+            color: #BDBDBD;
+            background: hsl(216, 38%, 97%);
+            border: 1px dashed hsl(215, 81%, 77%);
+            box-sizing: border-box;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 
+                0.25s border-color ease-out,
+                0.25s background-color ease-out;
+
+            &.dragIn {
+                background-color: red;
+
+                img {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &::before {
+                content: '';
+                background-image: url('/images/image.svg');
+                width: 115px;
+                height: 90px;
+                margin-bottom: 37px;
+            }
+    
+            &:hover {
+                background: hsl(216, 38%, 94%);
+                border: 1px dashed hsl(215, 81%, 74%);
+            }
+        }
+        
+        button {
+            background: hsl(214, 84%, 56%);
+            border: none;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 11px;
+            font-family: 'Noto Sans';
+            color: white;
+            margin-top: 18px;
+            cursor: pointer;
+            transition: 0.25s background-color ease-out;
+            
+            &:hover {
+                background: hsl(215, 72%, 50%);
+            }
+        }
+    }
+
+    &--uploading {
+        h2 { text-align: left }
+
+        .loader {
+            position: relative;
+            width: 100%;
+            height: 6px;
+            background: #F2F2F2;
+            border-radius: 8px;
+            overflow: hidden;
+
+            @keyframes loader {
+                0% { left: calc(0% - 35%) }
+                100% { left: 100% }
+            }
+
+            &::before {
+                content: '';
+                width: 35%;
+                height: 6px;
+                position: absolute;
+                background: #2F80ED;
+                border-radius: 8px;
+                animation: loader 2s ease-in-out infinite;
+            }
+        }
+    }
+
+    &--success {
+        h2 { text-align: center }
+
+        .material-icons {
+            color: #219653;
+            margin-bottom: 11px;
+            font-size: 35px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            margin-bottom: 25px
+        }
+
+        .link-clipboard {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #F6F8FB;
+            border: 1px solid #E0E0E0;
+            box-sizing: border-box;
+            border-radius: 8px;
+            font-size: 11px;
+
+            input {
+                color: rgb(189, 189, 189);
+                font-size: 11px;
+                background: none;
+                border: none;
+                flex-grow: 1;
+                margin: 11px 13px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                &:focus {
+                    border:none;
+                    outline: none;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            button {
+                background: hsl(214, 84%, 56%);
+                border: none;
+                color: white;
+                font-family: 'Noto Sans';
+                font-size: 11px;
+                border-radius: 8px;
+                padding: 12px 16px;
+                cursor: pointer;
+                transition: 0.25s background-color ease-out;
+                
+                &:hover {
+                    background: hsl(215, 72%, 50%);
+                }
+            }
+        }
+    }
+}
