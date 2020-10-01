@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fileupload-devchallenges/static/css/main.3d470caf.chunk.css",
+    "main.js": "/fileupload-devchallenges/static/js/main.89ab47a3.chunk.js",
+    "main.js.map": "/fileupload-devchallenges/static/js/main.89ab47a3.chunk.js.map",
+    "runtime-main.js": "/fileupload-devchallenges/static/js/runtime-main.0ea7340b.js",
+    "runtime-main.js.map": "/fileupload-devchallenges/static/js/runtime-main.0ea7340b.js.map",
+    "static/js/2.e1e18914.chunk.js": "/fileupload-devchallenges/static/js/2.e1e18914.chunk.js",
+    "static/js/2.e1e18914.chunk.js.map": "/fileupload-devchallenges/static/js/2.e1e18914.chunk.js.map",
+    "index.html": "/fileupload-devchallenges/index.html",
+    "precache-manifest.a68556ba9f9930bbb4fcef603448cd89.js": "/fileupload-devchallenges/precache-manifest.a68556ba9f9930bbb4fcef603448cd89.js",
+    "service-worker.js": "/fileupload-devchallenges/service-worker.js",
+    "static/css/main.3d470caf.chunk.css.map": "/fileupload-devchallenges/static/css/main.3d470caf.chunk.css.map",
+    "static/js/2.e1e18914.chunk.js.LICENSE.txt": "/fileupload-devchallenges/static/js/2.e1e18914.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ea7340b.js",
+    "static/js/2.e1e18914.chunk.js",
+    "static/css/main.3d470caf.chunk.css",
+    "static/js/main.89ab47a3.chunk.js"
+  ]
+}
