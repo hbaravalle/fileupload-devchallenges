@@ -64,7 +64,8 @@ main {
   box-sizing: border-box;
   border-radius: 12px;
   cursor: pointer;
-  transition: 0.25s border-color ease-out, 0.25s background-color ease-out;
+  transition: 0.25s border-color ease-out,
+ 0.25s background-color ease-out;
 }
 
 .card--dad .dad.dragIn {
@@ -77,7 +78,7 @@ main {
 
 .card--dad .dad::before {
   content: '';
-  background-image: url("/images/image.svg");
+  background-image: url('./images/image.svg');
   width: 115px;
   height: 90px;
   margin-bottom: 37px;

@@ -78,7 +78,7 @@ main {
 
             &::before {
                 content: '';
-                background-image: url('/images/image.svg');
+                background-image: url('./images/image.svg');
                 width: 115px;
                 height: 90px;
                 margin-bottom: 37px;
